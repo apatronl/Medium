@@ -7,12 +7,12 @@ import CoreLocation
 import Foundation
 
 // Sample URL:
-// https://api.openweathermap.org/data/2.5/weather?lat=51.50998&lon=-0.1337&appid=e6f124ac6b7d2fea7347932c86883958&units=metric
+// https://api.openweathermap.org/data/2.5/weather?lat=51.50998&lon=-0.1337&appid=YOUR_API_KEY&units=metric
 
 public final class WeatherService: NSObject {
 
   private let locationManager = CLLocationManager()
-  private let API_KEY = "133a4def891130e5c5bc762d902fca52"
+  private let API_KEY = "YOUR_API_KEY" // Replace with your own API key
   private var completionHandler: ((Weather?, LocationAuthError?) -> Void)?
   private var dataTask: URLSessionDataTask?
 
